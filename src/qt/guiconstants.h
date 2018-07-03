@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2015 The Bitcoin Core developers
-// Copyright (c) 2014-2017 The Dash Core developers
- // Copyright (c) 2018- The Alarmx Core developers
+// Copyright (c)2014-2017 The Dash Core developers
+// Copyright (c) 2018- The Alarmx Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -45,14 +45,15 @@ static const int TOOLTIP_WRAP_THRESHOLD = 80;
 static const int MAX_URI_LENGTH = 255;
 
 /* QRCodeDialog -- size of exported QR Code image */
-#define EXPORT_IMAGE_SIZE 256
+#define QR_IMAGE_SIZE 300
 
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "Alarmx"
-#define QAPP_ORG_DOMAIN "alarmx.org"
+#define QAPP_ORG_DOMAIN "alarmx.io"
 #define QAPP_APP_NAME_DEFAULT "Alarmx-Qt"
 #define QAPP_APP_NAME_TESTNET "Alarmx-Qt-testnet"
+#define QAPP_APP_NAME_DEVNET "Alarmx-Qt-%s"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

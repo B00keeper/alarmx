@@ -1,3 +1,2 @@
-debian/manpages/alarmxd.1
-debian/manpages/alarmx.conf.5
-debian/manpages/alarmx-cli.1
+doc/man/alarmxd.1
+doc/man/alarmx-cli.1

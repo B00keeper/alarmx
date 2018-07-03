@@ -89,7 +89,7 @@ You can confirm that remote server is on the correct block by issuing
 
 ```alarmx-cli getinfo```
 
-and comparing with the official explorer at https://explorer.alarmx.org/chain/Alarmx
+and comparing with the official explorer at https://explorer.alarmx.io/chain/Alarmx
 
 ### Local
 

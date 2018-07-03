@@ -39,6 +39,7 @@ typedef enum alarmxconsensus_error_t
     alarmxconsensus_ERR_TX_INDEX,
     alarmxconsensus_ERR_TX_SIZE_MISMATCH,
     alarmxconsensus_ERR_TX_DESERIALIZE,
+    alarmxconsensus_ERR_INVALID_FLAGS,
 } alarmxconsensus_error;
 
 /** Script verification flags */
@@ -47,7 +48,12 @@ enum
     alarmxconsensus_SCRIPT_FLAGS_VERIFY_NONE                = 0,
     alarmxconsensus_SCRIPT_FLAGS_VERIFY_P2SH                = (1U << 0), // evaluate P2SH (BIP16) subscripts
     alarmxconsensus_SCRIPT_FLAGS_VERIFY_DERSIG              = (1U << 2), // enforce strict DER (BIP66) compliance
+    alarmxconsensus_SCRIPT_FLAGS_VERIFY_NULLDUMMY           = (1U << 4), // enforce NULLDUMMY (BIP147)
     alarmxconsensus_SCRIPT_FLAGS_VERIFY_CHECKLOCKTIMEVERIFY = (1U << 9), // enable CHECKLOCKTIMEVERIFY (BIP65)
+    alarmxconsensus_SCRIPT_FLAGS_VERIFY_CHECKSEQUENCEVERIFY = (1U << 10), // enable CHECKSEQUENCEVERIFY (BIP112)
+    alarmxconsensus_SCRIPT_FLAGS_VERIFY_ALL                 = alarmxconsensus_SCRIPT_FLAGS_VERIFY_P2SH | alarmxconsensus_SCRIPT_FLAGS_VERIFY_DERSIG |
+                                                            alarmxconsensus_SCRIPT_FLAGS_VERIFY_NULLDUMMY | alarmxconsensus_SCRIPT_FLAGS_VERIFY_CHECKLOCKTIMEVERIFY |
+                                                            alarmxconsensus_SCRIPT_FLAGS_VERIFY_CHECKSEQUENCEVERIFY
 };
 
 /// Returns 1 if the input nIn of the serialized transaction pointed to by

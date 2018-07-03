@@ -8,6 +8,7 @@
         <file alias="fr">locale/alarmx_fr.qm</file>
         <file alias="it">locale/alarmx_it.qm</file>
         <file alias="ja">locale/alarmx_ja.qm</file>
+        <file alias="nl">locale/alarmx_nl.qm</file>
         <file alias="pl">locale/alarmx_pl.qm</file>
         <file alias="pt">locale/alarmx_pt.qm</file>
         <file alias="ru">locale/alarmx_ru.qm</file>
